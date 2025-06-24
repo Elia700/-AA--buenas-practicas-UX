@@ -1,0 +1,230 @@
+/* style.css - Estilos generales de SportBoard */
+body {
+  font-family: 'Lexend', 'Noto Sans', sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4 {
+  color: #111418;
+}
+
+a {
+  text-decoration: none;
+  color: #0c7ff2;
+}
+
+input, select, button {
+  font-family: inherit;
+}
+
+/* Botón primario */
+.boton-primario {
+  background-color: #0c7ff2;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.boton-primario:hover {
+  background-color: #086fd2;
+}
+
+/* Campos de entrada */
+.campo-texto {
+  background-color: #f0f2f5;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Contenedores principales */
+.login-container, .dashboard-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(120deg, #e0e7ff 0%, #f0f2f5 100%);
+}
+
+.login-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px 0 rgba(12, 127, 242, 0.08);
+  padding: 2.5rem 2rem;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.login-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0c7ff2;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.recordar {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.enlace {
+  color: #0c7ff2;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+.enlace:hover {
+  color: #086fd2;
+}
+
+.login-register {
+  text-align: center;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* Sidebar y dashboard */
+.dashboard-container {
+  background: linear-gradient(120deg, #e0e7ff 0%, #f0f2f5 100%);
+  min-height: 100vh;
+  display: flex;
+}
+
+.sidebar {
+  width: 240px;
+  background: #fff;
+  border-right: 1px solid #e5e7eb;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-height: 100vh;
+}
+.sidebar-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0c7ff2;
+  margin-bottom: 2rem;
+}
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.sidebar-link {
+  color: #111418;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+.sidebar-link:hover, .sidebar-link.activo {
+  background: #e0e7ff;
+  color: #0c7ff2;
+}
+
+.dashboard-main {
+  flex: 1;
+  padding: 2.5rem 3rem;
+  background: transparent;
+  min-height: 100vh;
+}
+.dashboard-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0c7ff2;
+  margin-bottom: 2rem;
+}
+.dashboard-section {
+  margin-bottom: 2.5rem;
+}
+.dashboard-cards {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.dashboard-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px 0 rgba(12, 127, 242, 0.07);
+  padding: 1.5rem 2rem;
+  font-size: 1.1rem;
+  color: #111418;
+  min-width: 160px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Perfil de usuario */
+.perfil-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: url('https://randomuser.me/api/portraits/lego/1.jpg') center/cover no-repeat, #e0e7ff;
+  margin: 0 auto 1rem auto;
+  border: 4px solid #0c7ff2;
+}
+.perfil-nombre {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #111418;
+  text-align: center;
+}
+.perfil-email {
+  color: #666;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .dashboard-main {
+    padding: 1.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .login-card, .dashboard-card {
+    padding: 1rem;
+  }
+  .dashboard-main {
+    padding: 0.5rem;
+  }
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestión - SportBoard</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700;900&family=Noto+Sans:wght@400;500;700;900&display=swap"
+    />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <aside class="sidebar">
+        <h2 class="sidebar-title">SportBoard</h2>
+        <nav class="sidebar-nav">
+          <a href="#" class="sidebar-link">Inicio</a>
+          <a href="#" class="sidebar-link">Equipos</a>
+          <a href="#" class="sidebar-link">Jugadores</a>
+          <a href="#" class="sidebar-link">Estadísticas</a>
+          <a href="#" class="sidebar-link">Perfil</a>
+        </nav>
+      </aside>
+      <main class="dashboard-main">
+        <h1 class="dashboard-title">Gestión de Partidos y Equipos</h1>
+        <section class="dashboard-section">
+          <h2>Resumen de Equipos</h2>
+          <div class="dashboard-cards">
+            <div class="dashboard-card">
+              <div style="font-size:2rem;">🐯</div>
+              <div>Tigres</div>
+              <div>Jugadores: <strong>12</strong></div>
+            </div>
+            <div class="dashboard-card">
+              <div style="font-size:2rem;">🦁</div>
+              <div>Leones</div>
+              <div>Jugadores: <strong>10</strong></div>
+            </div>
+            <div class="dashboard-card">
+              <div style="font-size:2rem;">🦅</div>
+              <div>Águilas</div>
+              <div>Jugadores: <strong>11</strong></div>
+            </div>
+          </div>
+        </section>
+        <section class="dashboard-section">
+          <h2>Crear nuevo equipo</h2>
+          <form class="login-form">
+            <input
+              type="text"
+              placeholder="Nombre del equipo"
+              class="campo-texto"
+            />
+            <button type="submit" class="boton-primario">Agregar equipo</button>
+          </form>
+        </section>
+        <section class="dashboard-section">
+          <h2>Programar nuevo partido</h2>
+          <form class="login-form">
+            <input type="text" placeholder="Equipo 1" class="campo-texto" />
+            <input type="text" placeholder="Equipo 2" class="campo-texto" />
+            <input type="date" class="campo-texto" />
+            <input type="time" class="campo-texto" />
+            <button type="submit" class="boton-primario">Programar partido</button>
+          </form>
+        </section>
+        <section class="dashboard-section">
+          <h2>Partidos Programados</h2>
+          <div style="overflow-x:auto;">
+            <table
+              style="
+                width: 100%;
+                border-collapse: collapse;
+                background: #fff;
+                border-radius: 12px;
+                box-shadow: 0 2px 12px 0 rgba(12, 127, 242, 0.07);
+              "
+            >
+              <thead style="background:#e0e7ff;">
+                <tr>
+                  <th
+                    style="
+                      padding: 12px;
+                      text-align: left;
+                      color: #0c7ff2;
+                    "
+                  >
+                    Equipo 1
+                  </th>
+                  <th
+                    style="
+                      padding: 12px;
+                      text-align: left;
+                      color: #0c7ff2;
+                    "
+                  >
+                    Equipo 2
+                  </th>
+                  <th
+                    style="
+                      padding: 12px;
+                      text-align: left;
+                      color: #0c7ff2;
+                    "
+                  >
+                    Fecha
+                  </th>
+                  <th
+                    style="
+                      padding: 12px;
+                      text-align: left;
+                      color: #0c7ff2;
+                    "
+                  >
+                    Hora
+                  </th>
+                  <th
+                    style="
+                      padding: 12px;
+                      text-align: left;
+                      color: #0c7ff2;
+                    "
+                  >
+                    Estado
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="padding:12px;">Tigres</td>
+                  <td style="padding:12px;">Leones</td>
+                  <td style="padding:12px;">2025-06-28</td>
+                  <td style="padding:12px;">18:00</td>
+                  <td style="padding:12px;">
+                    <span
+                      style="
+                        color: #34d399;
+                        font-weight: bold;
+                      "
+                      >Pendiente</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:12px;">Águilas</td>
+                  <td style="padding:12px;">Pumas</td>
+                  <td style="padding:12px;">2025-07-01</td>
+                  <td style="padding:12px;">20:00</td>
+                  <td style="padding:12px;">
+                    <span
+                      style="
+                        color: #fbbf24;
+                        font-weight: bold;
+                      "
+                      >Programado</span
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

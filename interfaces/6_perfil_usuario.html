@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil - SportBoard</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700;900&family=Noto+Sans:wght@400;500;700;900&display=swap" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <aside class="sidebar">
+        <h2 class="sidebar-title">SportBoard</h2>
+        <nav class="sidebar-nav">
+          <a href="#" class="sidebar-link">Inicio</a>
+          <a href="#" class="sidebar-link">Equipos</a>
+          <a href="#" class="sidebar-link">Jugadores</a>
+          <a href="#" class="sidebar-link">Partidos</a>
+          <a href="#" class="sidebar-link activo">Perfil</a>
+        </nav>
+      </aside>
+      <main class="dashboard-main">
+        <h1 class="dashboard-title">Perfil de Usuario</h1>
+        <section class="dashboard-section" style="text-align:center;">
+          <div class="perfil-avatar"></div>
+          <h2 class="perfil-nombre">***********</h2>
+          <p class="perfil-email">******************@email.com</p>
+          <div style="margin: 1.5rem 0; display: flex; justify-content: center; gap: 2rem;">
+            <div class="dashboard-card">
+              <div style="font-size:2rem;">⚽</div>
+              <div>Goles</div>
+              <strong>18</strong>
+            </div>
+            <div class="dashboard-card">
+              <div style="font-size:2rem;">🎯</div>
+              <div>Asistencias</div>
+              <strong>7</strong>
+            </div>
+            <div class="dashboard-card">
+              <div style="font-size:2rem;">🏆</div>
+              <div>Partidos</div>
+              <strong>24</strong>
+            </div>
+          </div>
+        </section>
+        <section class="dashboard-section">
+          <h3>Actividad reciente</h3>
+          <div style="background: #fff; border-radius: 16px; box-shadow: 0 2px 12px 0 rgba(12,127,242,0.07); padding: 2rem; max-width: 600px; margin: 0 auto;">
+            <canvas id="graficaActividad" height="100"></canvas>
+          </div>
+        </section>
+        <section class="dashboard-section">
+          <h3>Equipos</h3>
+          <ul style="display:flex; gap:1.5rem; flex-wrap:wrap; justify-content:center; margin:1rem 0;">
+            <li class="dashboard-card" style="min-width:120px;">Tigres</li>
+            <li class="dashboard-card" style="min-width:120px;">Leones</li>
+          </ul>
+        </section>
+        <section class="dashboard-section">
+          <h3>Logros</h3>
+          <ul style="display:flex; gap:1.5rem; flex-wrap:wrap; justify-content:center; margin:1rem 0;">
+            <li class="dashboard-card" style="min-width:160px;">Máximo goleador 2024</li>
+            <li class="dashboard-card" style="min-width:160px;">Jugador del mes</li>
+          </ul>
+        </section>
+        <section class="dashboard-section">
+          <h3>Información de la cuenta</h3>
+          <form class="login-form" style="max-width:400px; margin:0 auto;">
+            <button type="submit" class="boton-primario">Editar Informacion del perfil</button>
+          </form>
+        </section>
+      </main>
+    </div>
+    <script>
+      // Gráfica de actividad semanal
+      const ctx = document.getElementById('graficaActividad').getContext('2d');
+      new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ['Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb', 'Dom'],
+          datasets: [{
+            label: 'Minutos jugados',
+            data: [60, 45, 80, 30, 90, 120, 70],
+            fill: true,
+            backgroundColor: 'rgba(12,127,242,0.10)',
+            borderColor: '#0c7ff2',
+            tension: 0.4,
+            pointRadius: 5,
+            pointBackgroundColor: '#0c7ff2',
+            pointBorderColor: '#fff',
+            pointBorderWidth: 2
+          }]
+        },
+        options: {
+          plugins: {
+            legend: { display: false }
+          },
+          scales: {
+            x: {
+              grid: { display: false },
+              ticks: { color: '#111418', font: { weight: 'bold' } }
+            },
+            y: {
+              beginAtZero: true,
+              grid: { color: '#e5e7eb' },
+              ticks: { color: '#0c7ff2', font: { weight: 'bold' } }
+            }
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

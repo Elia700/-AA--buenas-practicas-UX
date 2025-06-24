@@ -80,7 +80,7 @@ SportBoard/
 - "Igual en dashboard mejoro 10 veces mejor"
 
 ## Cómo usar
-1. Abre `index.html` o cualquiera de las interfaces en tu navegador.
+1. Abre `1_login.html` o cualquiera de las interfaces en tu navegador.
 2. Navega entre las diferentes vistas para explorar la funcionalidad y el diseño.
 3. Personaliza los datos y estilos en los archivos según tus necesidades.
 

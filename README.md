@@ -52,7 +52,6 @@ SportBoard/
 │   └── style.css               # Estilos personalizados globales
 ├── js/
 │   └── script.js               # Lógica JS adicional (opcional)
-├── index.html                  # Página inicial
 └── README.md                   # Documentación y metodología
 ```
 

@@ -65,7 +65,7 @@ SportBoard/
 
 ## Metodología y prompts utilizados
 -Metodología y herramientas utilizadas
--Se desarrolló una estructura organizada de carpetas y archivos para una aplicación web enfocada en la gestión deportiva. Cada una de las interfaces HTML fue diseñada utilizando estilos CSS personalizados, aplicando principios de diseño atractivo, moderno y respetando buenas prácticas de desarrollo.
+Se desarrolló una estructura organizada de carpetas y archivos para una aplicación web enfocada en la gestión deportiva. Cada una de las interfaces HTML fue diseñada utilizando estilos CSS personalizados, aplicando principios de diseño atractivo, moderno y respetando buenas prácticas de desarrollo.
 
 Las vistas implementadas incluyen: inicio de sesión, registro de usuario, panel principal (dashboard), estadísticas, gestión de partidos y perfil de usuario. Todas ellas fueron optimizadas visualmente para ofrecer una experiencia de usuario intuitiva y coherente.
 

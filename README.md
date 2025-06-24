@@ -2,21 +2,37 @@
 1_login.html            # Interfaz de inicio de sesión
 
 
+
 ![image](https://github.com/user-attachments/assets/20f5e150-23f3-4190-aad2-04ecd2c219a8)
 
 2_registro.html         # Registro de usuario
+
+
+
 ![image](https://github.com/user-attachments/assets/1428c1ce-07a6-489f-a3e0-4ac5893fbf27)
 
 3_dashboard.html        # Panel principal del usuario
+
+
+
 ![image](https://github.com/user-attachments/assets/013f05bb-a82a-46e5-9449-107b87327362)
 
 4_estadisticas.html     # Estadísticas deportivas por equipo
+
+
+
 ![image](https://github.com/user-attachments/assets/8843679b-2a99-40cb-a371-86aa7b5d32c7)
 
 5_gestion_partidos.html # Gestión de partidos y equipos
+
+
+
 ![image](https://github.com/user-attachments/assets/aa1e4441-06e4-4d41-bc54-74cfa6e259f3)
 
 6_perfil_usuario.html   # Perfil y configuración del usuario
+
+
+
 ![image](https://github.com/user-attachments/assets/79c4ff14-c320-4966-8b24-1ba94ce730a1)
 
 SportBoard es una aplicación web de gestión y visualización de información deportiva, diseñada con interfaces modernas, responsivas y visualmente atractivas. Permite gestionar usuarios, equipos, partidos y visualizar estadísticas deportivas de manera intuitiva.

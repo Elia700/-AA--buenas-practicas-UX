@@ -70,13 +70,7 @@ SportBoard/
 - Se agregaron gráficas y tablas usando Chart.js para visualización de datos.
 - Se implementaron tarjetas, tablas y secciones visuales para mejorar la experiencia de usuario.
 
-### Ejemplo de prompts usados
-- "Crea un nuevo proyecto llamado 'SportBoard' con la siguiente estructura..."
-- "Haz que cada html cuente con su css pero que se vea demasiado bonito..."
-- "En estadísticas ponlas por equipo con una gráfica solo que se vea bonito"
-- "Agrega más cosas en el perfil de usuario igual para que se vea mucho mejor"
-- "En gestión de partidos igual modifica y mete más información de forma que se vea mucho mejor"
-- "Igual en dashboard mejoro 10 veces mejor"
+
 
 ## Cómo usar
 1. Abre `1_login.html` o cualquiera de las interfaces en tu navegador.

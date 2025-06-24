@@ -1,5 +1,7 @@
 # SportBoard
 1_login.html            # Interfaz de inicio de sesión
+
+
 ![image](https://github.com/user-attachments/assets/20f5e150-23f3-4190-aad2-04ecd2c219a8)
 
 2_registro.html         # Registro de usuario

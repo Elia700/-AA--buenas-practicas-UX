@@ -64,11 +64,12 @@ SportBoard/
 - Separación de estilos y lógica
 
 ## Metodología y prompts utilizados
-- Se solicitó la creación de una estructura de carpetas y archivos para una app deportiva.
-- Se pidió que cada interfaz HTML usara solo CSS propio, con diseño atractivo y buenas prácticas.
-- Se mejoraron visualmente todas las vistas: login, registro, dashboard, estadísticas, gestión de partidos y perfil.
-- Se agregaron gráficas y tablas usando Chart.js para visualización de datos.
-- Se implementaron tarjetas, tablas y secciones visuales para mejorar la experiencia de usuario.
+-Metodología y herramientas utilizadas
+-Se desarrolló una estructura organizada de carpetas y archivos para una aplicación web enfocada en la gestión deportiva. Cada una de las interfaces HTML fue diseñada utilizando estilos CSS personalizados, aplicando principios de diseño atractivo, moderno y respetando buenas prácticas de desarrollo.
+
+Las vistas implementadas incluyen: inicio de sesión, registro de usuario, panel principal (dashboard), estadísticas, gestión de partidos y perfil de usuario. Todas ellas fueron optimizadas visualmente para ofrecer una experiencia de usuario intuitiva y coherente.
+
+Además, se incorporaron gráficos interactivos y visualizaciones de datos utilizando Chart.js, junto con tablas estructuradas, tarjetas informativas y componentes visuales que permiten una interpretación clara y dinámica de la información presentada.
 
 
 
